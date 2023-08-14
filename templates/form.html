@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Customer Service //-Customer-Service Applyation Request </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='CSS/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@500&family=Poppins:ital,wght@0,500;0,800;1,400;1,500;1,600&family=Russo+One&family=Ubuntu:ital@0;1&family=Work+Sans:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image" href="images/f.png" style="width: auto;">
+</head>
+
+<body>
+    <!-- Container Start -->
+  <div id="container">
+    
+    <br>
+
+
+    <!-- Form Wrap Start -->
+    <div class="form-wrap">
+      <div class="bb">
+        <h2>  Average Marks Calculator </h2> 
+      </div>
+
+      <br>
+      <br>
+      
+      
+      <p></p>
+      <!-- Form Start -->
+      <form action="{{ url_for('form') }}" method="post">
+        <div class="form-group">
+          <label for="Maths" > Maths Number *</label>
+          <input type="number" name="Maths" id="Maths" placeholder=" Enter Your Maths Number " >
+        </div>
+       
+        <div class="form-group">
+          <label for="Science">  Science Number * </label>
+          <input type="number" name="Science" id="Science"  placeholder=" Enter Your Science Number " >
+        </div>
+        <div class="form-group">
+          <label for="History"> History Number* </label>
+          <input type="number" name="History" id="History" placeholder=" Enter Your History Number " >
+        </div>
+      
+
+        <center>
+           <button type="submit"> Submit </button>
+        </center>
+        
+
+        <br>
+        <br>
+
+      <!--   the Average Marks is {{score}}   --> 
+
+
+        <center>
+          <span id="success" ></span>
+        </center>
+
+        <br>
+        <p class="bottom-text">
+          By Clicking the Next Button, you agree to our
+          <a href="#">Term & Conditions</a> and <a href="#">Primary Policy</a>
+        </p>
+      </form>
+      
+      <!-- Form Close -->
+
+    </div>
+    <!-- Form Wrap Close -->
+
+
+    <footer>
+      <p ><small>&copy;</small><hr> <small>All Rights Reserved.</small> </p>
+    </footer>
+  </div>
+  <!-- Container Close -->
+
+
+
+</body>
+</html>
