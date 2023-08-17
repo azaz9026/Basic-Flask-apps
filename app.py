@@ -10,8 +10,7 @@ app = Flask(__name__)
 
 
 @app.route('/' , methods=['GET'])
-def welcome():
-    
+def welcome():   
     
     return "Welcome to the Azaz Project of Flask"
 
